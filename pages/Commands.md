@@ -72,6 +72,9 @@
 |`dhcp-lease-list`|list DHCP clients on server|
 |`/etc/network/interfaces`|permament interfaces configuration ([static](../files/network/interfaces_static), [dhcp](../files/network/interfaces_automatic))|
 |`nslookup domain [dns]`|get domain ip from dns server|
+|`/etc/resolv.conf`|current DNS servers used by system|
+|`/etc/resolv.conf/resolv.conf.d/head`|setup custom primary DNS (requires `resolvconf` package)|
+|`dpgk-reconfigure resolvconf`|recreates `resolv.conf` link in `/etc`|
 
 ## Process management
 
