@@ -43,22 +43,22 @@ Wiki hosted on our server. Download from [MediaWiki website](https://www.mediawi
     <tr><td><code>apt install php-mysql php-mbstring php-xml</code></td><td>instal php modules</td></tr>
     <tr><td><code>service apache2 reload</code></td><td>reload apache to load php modules</td></tr>
     <tr><td><code>mysql -u root -p</code></td><td>open mysql console</td></tr>
-    <tr><td><code>
-        MariaDB [(none)]> USE mysql;<br/>
-        MariaDB [mysql]> CREATE USER 'wiki'@'localhost' IDENTIFIED BY 'wiki';<br/>
-    </code></td><td>create database user for wiki</td></tr>
-    <tr><td><code>
-        MariaDB [(none)]> CREATE DATABASE wiki;<br/>
-        MariaDB [(none)]> USE wiki;<br/>
-        MariaDB [wiki]> GRANT ALL ON wiki.* TO wiki@localhost;<br/>
-    </code></td><td>create database for wiki</td></tr>
+    <tr><td>
+        <code>MariaDB [(none)]> USE mysql;</code><br/>
+        <code>MariaDB [mysql]> CREATE USER 'wiki'@'localhost' IDENTIFIED BY 'wiki';</code>
+    </td><td>create database user for wiki</td></tr>
+    <tr><td>
+        <code>MariaDB [(none)]> CREATE DATABASE wiki;</code><br/>
+        <code>MariaDB [(none)]> USE wiki;</code><br/>
+        <code>MariaDB [wiki]> GRANT ALL ON wiki.* TO wiki@localhost;</code>
+    </td><td>create database for wiki</td></tr>
 </table>
 
 ### Setup Website
 
 <table>
     <tr><td><code>/etc/apache2/sites-available</code></td><td>sites configurations used by apache</td></tr>
-    <tr><td><code>/etc/apache2/sites-available/wiki.example.com.conf</code></td><td>create [confuration file](../files/lamp/wiki.example.org.conf)</td></tr>
+    <tr><td><code>/etc/apache2/sites-available/wiki.example.com.conf</code></td><td>create <a href="../files/lamp/wiki.example.com.conf">confuration file</a></td></tr>
     <tr><td><code>service apache2 reload</code></td><td>reload apache server</td></tr>
     <tr><td><code>wget -o mediawiki.zip https://releases.wikimedia.org/mediawiki/1.35/mediawiki-1.35.1.zip</code></td><td>dowload wiki website</td></tr>
     <tr><td><code>unzip mediawiki.zip -d /var/www/wiki</code></td><td>unpack wiki to website directory</td></tr>
