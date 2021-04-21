@@ -29,7 +29,7 @@ Extend our Apache server with PHP mod.
 MySql database. Defaults usually to [MariaDB](https://mariadb.org/).
 
 <table>
-    <tr><td><code>apt install mysql-server</code></td><td>install MySql Server</td></tr>
+    <tr><td><code>apt install default-mysql-server</code></td><td>install MySql Server</td></tr>
 </table>
 
 
