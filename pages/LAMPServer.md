@@ -60,7 +60,7 @@ Wiki hosted on our server. Download from [MediaWiki website](https://www.mediawi
     <tr><td><code>/etc/apache2/sites-available</code></td><td>sites configurations used by apache</td></tr>
     <tr><td><code>/etc/apache2/sites-available/wiki.example.com.conf</code></td><td>create <a href="../files/lamp/wiki.example.com.conf">confuration file</a></td></tr>
     <tr><td><code>service apache2 reload</code></td><td>reload apache server</td></tr>
-    <tr><td><code>wget -o mediawiki.zip https://releases.wikimedia.org/mediawiki/1.35/mediawiki-1.35.1.zip</code></td><td>dowload wiki website</td></tr>
+    <tr><td><code>wget -O mediawiki.zip https://releases.wikimedia.org/mediawiki/1.35/mediawiki-1.35.1.zip</code></td><td>dowload wiki website</td></tr>
     <tr><td><code>unzip mediawiki.zip -d /var/www/wiki</code></td><td>unpack wiki to website directory</td></tr>
 </table>
 
